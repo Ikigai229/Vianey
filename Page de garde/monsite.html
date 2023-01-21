@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page de garde</title>
+    <style>
+      
+      button:hover {
+        background-color: #43a047;
+      }
+
+      button:active {
+        box-shadow: 0 0.25rem 0.313rem 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12), 0 0.125rem 0.25rem -0.063rem rgba(0, 0, 0, 0.3);
+        background-color: #FFB703;
+      }
+        
+      button {
+        color: #fff;
+        border: none;
+        border-radius: 20px;
+        box-shadow: 0 0.125rem 0.125rem 0 rgba(0, 0, 0, 0.14), 0 0.063rem 0.313rem 0 rgba(0, 0, 0, 0.12), 0 0.188rem 0.063rem -0.188rem rgba(0, 0, 0, 0.2);
+        background-color: #8ECAE6;
+        
+      }
+        .icon{
+        width: 5rem;
+        height: 5rem;
+      }
+
+      .hover-rotate {
+        overflow: hidden;
+        margin: 0.5rem;
+        min-width: 15rem;
+        max-width: 20rem;
+        width: 100%;
+      }
+      
+      .hover-rotate img {
+        transition: all 0.3s;
+        box-sizing: border-box;
+        max-width: 100%;
+      }
+      
+      .hover-rotate:hover img {
+        transform: scale(1.3) rotate(5deg);
+      }
+
+      body{
+        margin: 0;
+        border: 0;
+        padding: 0;
+        height: 100%;
+        width: 80%;
+
+      }
+
+      #arriere{
+        position: absolute;
+        width: 100rem;
+               
+      }
+
+      #container{
+        display: flex;
+        position: relative;
+        width: 41rem;
+        height: 36rem;
+        left: 22rem;
+        top: 3rem;
+        border: 0.3rem solid aqua;
+        border-radius: 2rem;
+      }
+
+      #div1{
+        flex-grow: 1;
+        width: 20rem;
+        display: flex;
+        top: 0.315rem;
+      }
+
+      #div2{
+        flex-grow: 1;
+        width: 18rem;
+        height: 27rem;
+        position: absolute;
+        left: 22rem;
+        top: 0.5rem;
+        border: 0.2rem solid red;
+      }
+
+      #div3{
+        flex-grow: 1;
+        width: 7rem;
+        position: absolute;
+        left: 27rem;
+        top: 29.5rem;
+      }
+
+      p{
+        position: absolute;
+        left: 2rem;
+        top: 0.5rem;
+        color: black;
+        align-items: center;
+        font-size: 20px;
+      }
+
+      span{
+        color: pink;
+      }
+
+      h2{
+        position: absolute;
+        top: -1rem;
+      }
+
+      .circle{
+        position: absolute;
+        left: 22rem;
+        top: 00.5rem;
+        width: 12rem;
+        height: 27rem;
+        background: linear-gradient(
+          180deg, rgba(217,27,217, 0.6)0%, rgba(255,255,255,0.24) 0.01%, rgba(255,255,255,0.06)100%
+        );
+        backdrop-filter: blur(2px);
+        border-radius: 9%;
+        z-index: 10;
+      }
+
+      @media scream and (min-width: 600dpi) {
+        body{
+          position: absolute;
+          width: 100%;
+          height: 100%;
+        }
+
+        .container{
+          position: relative;
+        }
+       
+      }
+      
+    </style>
+</head>
+<body>
+<img src="Me2.jpg" id="arriere" alt="">
+  <div id="container">
+    <div id="div1">
+      <figure class="hover-rotate">
+        <img src="./Me.jpg"/>
+      </figure>
+    </div>
+    <div class="container">
+      <div class="circle" id="div2">
+        <h2>Web Developer</h2>
+          <p> De nos jours avec l'évolution des Nouvelles Technologies de l'Information et de la Communication (NTIC) le domaine du web se fait de plus en plus connaître. Avec <span>Internet</span> tout est devenu plus facile. Malhereusement le Développement Web reste encore un métier peu connu du grand public. La tache revient donc à nous les Développeurs/Programmeurs de vous éclairer sur les bases de notre métier.   </p>
+      </div>
+    </div>
+      
+    <div id="div3">
+      <button id="button">
+        <img src="./allumer.png"  class="icon" alt="Icone de puissance" title="Appuyez-moi">
+      </button>
+    </div>
+  </div>
+  
+</body>
+</html>
